@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.cacttuseducation.projekt2_travel_advisor.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_movies"
+            app:destination="@id/nav_movies"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/nav_movies" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="com.cacttuseducation.projekt2_travel_advisor.ui.register.RegisterFragment"
+        android:label="@string/menu_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_nav_register_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+
+    <fragment
+    android:id="@+id/nav_login"
+    android:name="com.cacttuseducation.projekt2_travel_advisor.ui.login.LoginFragment"
+    android:label="@string/menu_login"
+    tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_nav_login_to_nav_register"
+            app:destination="@id/nav_register"
+            app:enterAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nav_login_to_nav_movies"
+            app:destination="@id/nav_movies" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_movies"
+        android:name="com.cacttuseducation.projekt2_travel_advisor.ui.movie.MovieFragment"
+        android:label="@string/menu_movies"
+        tools:layout="@layout/fragment_movie" >
+        <action
+            android:id="@+id/action_nav_hotels_to_nav_login"
+            app:destination="@id/nav_login" />
+        <action
+            android:id="@+id/action_nav_movies_to_nav_favorites"
+            app:destination="@id/nav_favorites" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.cacttuseducation.projekt2_travel_advisor.ui.favorites.FavoriteFragment"
+        android:label="Favorite movies"
+        tools:layout="@layout/fragment_favorite" >
+    </fragment>
+</navigation>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Projekt2_Travel_Advisor</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_register">Register</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_movies">Find a movie</string>
+
+
+
+
+    <string name="list_item_name">Rubens At the Palace</string>
+    <string name="list_item_address">Westminster Borough, London</string>
+    <string name="list_item_rviews">178 Reviews</string>
+    <string name="list_item_price">$90-$127</string>
+    <string name="list_item_rate">8.0</string>
+    <string name="favorites" />
+
+
+</resources>

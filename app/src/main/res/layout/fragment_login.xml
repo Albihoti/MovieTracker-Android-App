@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_register"
+    tools:context=".ui.login.LoginFragment" >
+
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/loginEmail"
+        android:text="Log In"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="E-mail"
+        android:paddingLeft="20dp"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginEmail"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginPassword"
+        android:layout_marginTop="15dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_shape"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
